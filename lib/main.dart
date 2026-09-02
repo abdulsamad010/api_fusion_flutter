@@ -2,10 +2,15 @@ import 'package:api_fusion_flutter/features/get/get_screen.dart';
 import 'package:api_fusion_flutter/features/home/home_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
+import 'features/get/get_bloc.dart';
 import 'features/home/home_screen.dart';
 
-void main() {
+void main() async{
+  print("calling .evv load");
+  await dotenv.load(fileName: ".env");
+  print("loaded");
   runApp(const MyApp());
 }
 
@@ -18,6 +23,9 @@ class MyApp extends StatelessWidget {
         providers: [
           BlocProvider(create: (context){
             return HomeBloc();
+          }),
+          BlocProvider(create: (context){
+            return GetBloc();
           })
         ],
         child: MaterialApp(

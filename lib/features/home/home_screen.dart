@@ -40,7 +40,7 @@ class _HomeScreenState extends State<HomeScreen> {
               BottomNavigationBarItem(icon: Icon(Icons.delete_forever_outlined),label: "Delete")
             ],
               unselectedItemColor: Colors.grey,
-              selectedItemColor: Colors.purple,
+              selectedItemColor: Colors.deepPurple,
               currentIndex: state.currentIndex,
               onTap: (index){
 
