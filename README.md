@@ -1,42 +1,33 @@
 # 🚀 API Fusion / Flutter
 
-```{=html}
-<p align="center">
-```
-`<img src="https://img.shields.io/badge/Flutter-3.x-02569B?logo=flutter&logoColor=white" alt="Flutter">`{=html}
-`<img src="https://img.shields.io/badge/Dart-3.x-0175C2?logo=dart&logoColor=white" alt="Dart">`{=html}
-`<img src="https://img.shields.io/badge/REST%20API-Integration-4CAF50?logo=fastapi&logoColor=white" alt="REST API">`{=html}
-`<img src="https://img.shields.io/badge/BLoC-State%20Management-6A1B9A?logo=flutter&logoColor=white" alt="BLoC">`{=html}
-`<img src="https://img.shields.io/badge/HTTP-Requests-FF9800?logo=httpie&logoColor=white" alt="HTTP">`{=html}
-```{=html}
-</p>
-```
-```{=html}
-<p align="center">
-```
-`<b>`{=html}A Flutter application demonstrating REST API integration
-with GET, POST, PUT and DELETE operations using BLoC state
-management.`</b>`{=html}
-```{=html}
-</p>
-```
+[![Flutter](https://img.shields.io/badge/Flutter-3.x-02569B?logo=flutter&logoColor=white)](https://flutter.dev/)
+[![Dart](https://img.shields.io/badge/Dart-3.x-0175C2?logo=dart&logoColor=white)](https://dart.dev/)
+[![REST
+API](https://img.shields.io/badge/REST%20API-Integration-4CAF50)](https://developer.mozilla.org/en-US/docs/Glossary/REST)
+[![BLoC](https://img.shields.io/badge/BLoC-State%20Management-6A1B9A)](https://bloclibrary.dev/)
+
+> A Flutter application demonstrating REST API integration with **GET,
+> POST, PUT and DELETE** operations using **BLoC state management**.
 
 ------------------------------------------------------------------------
 
 ## 📱 About the Project
 
-**API Fusion / Flutter** is an OWASoft Technologies Pvt. Ltd. internship
-project developed to practice practical REST API integration in Flutter.
+**API Fusion / Flutter** is an internship project developed at **OWASoft
+Technologies Pvt. Ltd.** to practice practical REST API integration in
+Flutter.
 
-The application combines multiple public APIs in one interface and
-demonstrates HTTP request handling, JSON responses, Dart models, BLoC
-state management, form input, validation, loading states and error
-handling.
+The application brings multiple public APIs together in a single Flutter
+interface and demonstrates HTTP request handling, JSON responses, Dart
+models, BLoC state management, form input, validation, loading states
+and error handling.
 
-> **Internship:** OWASoft Technologies Pvt. Ltd.\
-> **Role:** Flutter Developer Intern\
-> **Week:** 5\
-> **Task:** API Fusion / Flutter
+**Internship:** OWASoft Technologies Pvt. Ltd.\
+**Role:** Flutter Developer Intern\
+**Week:** 5\
+**Task:** API Fusion / Flutter
+
+------------------------------------------------------------------------
 
 ## ✨ Features
 
@@ -59,18 +50,18 @@ handling.
 
 ## 🔵 GET APIs --- 8
 
-\#   API               Purpose               Auth
+  \#   API               Purpose               Authentication
   ---- ----------------- --------------------- ----------------------
-1    🌤️ Open-Meteo     Current weather       None
-2    😂 JokeAPI        Random jokes          None
-3    ⚡ PokéAPI        Pokémon information   None
-4    📚 Open Library   Book search           None
-5    🍽️ TheMealDB      Random meal/recipe    Public test endpoint
-6    🐶 Dog API        Random dog image      None
-7    👤 Random User    Random user profile   None
-8    🛍️ DummyJSON      Product information   None
+  1    🌤️ Open-Meteo     Current weather       None
+  2    😂 JokeAPI        Random jokes          None
+  3    ⚡ PokéAPI        Pokémon information   None
+  4    📚 Open Library   Book search           None
+  5    🍽️ TheMealDB      Random meal/recipe    Public test endpoint
+  6    🐶 Dog API        Random dog image      None
+  7    👤 Random User    Random user profile   None
+  8    🛍️ DummyJSON      Product information   None
 
-### GET endpoints
+### Endpoints
 
 ``` text
 Open-Meteo
@@ -102,15 +93,15 @@ https://dummyjson.com/products/1
 
 ## 🟢 POST APIs --- 5
 
-\#   API                        Operation     Input
+  \#   API                        Operation     Input
   ---- -------------------------- ------------- -----------------
-9    🛍️ DummyJSON Products      Add product   Title, Price
-10   📝 DummyJSON Posts         Add post      Title, Body
-11   🍽️ DummyJSON Recipes       Add recipe    Recipe name
-12   📝 JSONPlaceholder Posts   Add post      Title, Body
-13   ✅ DummyJSON Todos         Add todo      Todo, Completed
+  9    🛍️ DummyJSON Products      Add product   Title, Price
+  10   📝 DummyJSON Posts         Add post      Title, Body
+  11   🍽️ DummyJSON Recipes       Add recipe    Recipe Name
+  12   📝 JSONPlaceholder Posts   Add post      Title, Body
+  13   ✅ DummyJSON Todos         Add todo      Todo, Completed
 
-### POST endpoints
+### Endpoints
 
 ``` text
 https://dummyjson.com/products/add
@@ -124,14 +115,14 @@ https://dummyjson.com/todos/add
 
 ## 🟠 PUT APIs --- 4
 
-\#   API                        Operation        Input
+  \#   API                        Operation        Input
   ---- -------------------------- ---------------- ------------------
-14   🛍️ DummyJSON Products      Update product   ID, Title, Price
-15   👤 DummyJSON Users         Update user      Last Name
-16   📝 DummyJSON Posts         Update post      ID, Title, Body
-17   📝 JSONPlaceholder Posts   Update post      ID, Title, Body
+  14   🛍️ DummyJSON Products      Update product   ID, Title, Price
+  15   👤 DummyJSON Users         Update user      Last Name
+  16   📝 DummyJSON Posts         Update post      ID, Title, Body
+  17   📝 JSONPlaceholder Posts   Update post      ID, Title, Body
 
-### PUT endpoints
+### Endpoints
 
 ``` text
 https://dummyjson.com/products/{id}
@@ -144,13 +135,13 @@ https://jsonplaceholder.typicode.com/posts/1
 
 ## 🔴 DELETE APIs --- 3
 
-\#   API                        Operation
+  \#   API                        Operation
   ---- -------------------------- ----------------
-18   🛍️ DummyJSON Products      Delete product
-19   👤 DummyJSON Users         Delete user
-20   📝 JSONPlaceholder Posts   Delete post
+  18   🛍️ DummyJSON Products      Delete product
+  19   👤 DummyJSON Users         Delete user
+  20   📝 JSONPlaceholder Posts   Delete post
 
-### DELETE endpoints
+### Endpoints
 
 ``` text
 https://dummyjson.com/products/1
@@ -162,7 +153,7 @@ https://jsonplaceholder.typicode.com/posts/1
 
 # 🧠 BLoC Architecture
 
-The project uses a simple feature-based BLoC structure.
+The application uses a simple feature-based BLoC structure.
 
 ``` text
 User Action
@@ -184,7 +175,7 @@ BLoC State
 UI
 ```
 
-Each API section has its own event, state, BLoC and screen files.
+Each API operation is organized into feature-specific files:
 
 ``` text
 lib/features/
@@ -194,6 +185,8 @@ lib/features/
 ├── put/
 └── delete/
 ```
+
+------------------------------------------------------------------------
 
 # 🔧 API Service
 
@@ -214,6 +207,8 @@ deleteApi(String address)
 
 This keeps network request logic reusable across the application.
 
+------------------------------------------------------------------------
+
 # 📦 Response Models
 
 GET responses are converted into simple Dart models where appropriate:
@@ -229,6 +224,8 @@ RandomUserModel
 ProductModel
 ```
 
+------------------------------------------------------------------------
+
 # 🔐 Environment Configuration
 
 API URLs are configured through a `.env` file.
@@ -243,6 +240,8 @@ DOG_API_URL=https://dog.ceo/api/breeds/image/random
 ```
 
 The `.env` file is excluded from Git using `.gitignore`.
+
+------------------------------------------------------------------------
 
 # 📂 Project Structure
 
@@ -276,6 +275,8 @@ api_fusion_flutter/
 └── README.md
 ```
 
+------------------------------------------------------------------------
+
 # 🚀 Getting Started
 
 ### 1. Clone the repository
@@ -293,7 +294,7 @@ flutter pub get
 
 ### 3. Configure `.env`
 
-Create the `.env` file in the project root and add the API URLs required
+Create a `.env` file in the project root and add the API URLs required
 by the application.
 
 ### 4. Run the application
@@ -302,19 +303,23 @@ by the application.
 flutter run
 ```
 
+------------------------------------------------------------------------
+
 # 🛠️ Technologies Used
 
-Technology          Purpose
+  Technology          Purpose
   ------------------- --------------------------------
-💙 Flutter          UI and application development
-🎯 Dart             Programming language
-🧠 BLoC             State management
-🌐 HTTP             REST API requests
-🔐 flutter_dotenv   Environment configuration
-🧩 JSON             API data format
-🎨 Material UI      User interface
-🐙 Git              Version control
-🚀 GitHub           Repository hosting
+  💙 Flutter          UI and application development
+  🎯 Dart             Programming language
+  🧠 BLoC             State management
+  🌐 HTTP             REST API requests
+  🔐 flutter_dotenv   Environment configuration
+  🧩 JSON             API data format
+  🎨 Material UI      User interface
+  🐙 Git              Version control
+  🚀 GitHub           Repository hosting
+
+------------------------------------------------------------------------
 
 # 📚 Learning Outcomes
 
@@ -329,6 +334,8 @@ Technology          Purpose
 -   Reusable Flutter widgets
 -   Environment configuration
 -   Git and GitHub workflow
+
+------------------------------------------------------------------------
 
 # ⚠️ API Notes
 
@@ -356,10 +363,14 @@ The current weather integration uses configured fixed coordinates rather
 than device GPS, so the application requests weather for the configured
 location.
 
+------------------------------------------------------------------------
+
 # 🔗 Repository
 
 **GitHub Repository:**\
 https://github.com/abdulsamad010/api_fusion_flutter
+
+------------------------------------------------------------------------
 
 # 👨‍💻 Developer
 
@@ -369,17 +380,4 @@ Flutter Developer Intern\
 
 ------------------------------------------------------------------------
 
-```{=html}
-<p align="center">
-```
-`<b>`{=html}Built with Flutter 💙 • REST APIs 🌐 • BLoC 🧠`</b>`{=html}
-```{=html}
-</p>
-```
-```{=html}
-<p align="center">
-```
 ⭐ If you find this project useful, consider starring the repository.
-```{=html}
-</p>
-```
