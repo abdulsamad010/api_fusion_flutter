@@ -4,8 +4,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 
+import 'features/delete/delete_bloc.dart';
 import 'features/get/get_bloc.dart';
 import 'features/home/home_screen.dart';
+import 'features/post/post_bloc.dart';
+import 'features/put/put_bloc.dart';
 
 void main() async{
   print("calling .evv load");
@@ -26,6 +29,15 @@ class MyApp extends StatelessWidget {
           }),
           BlocProvider(create: (context){
             return GetBloc();
+          }),
+          BlocProvider(create: (context){
+            return PostBloc();
+          }),
+          BlocProvider(create: (context){
+            return PutBloc();
+          }),
+          BlocProvider(create: (context){
+            return DeleteBloc();
           })
         ],
         child: MaterialApp(
