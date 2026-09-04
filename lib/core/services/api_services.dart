@@ -37,8 +37,8 @@ class ApiServices {
       );
 
       if (response.statusCode == 201) {
-        final data=jsonDecode(response.body);
-        return data;
+
+        return "success";
       }
       else{
         return "failed";
@@ -62,9 +62,9 @@ class ApiServices {
           body: jsonEncode(data)
       );
 
-      if (response.statusCode == 200) {
+      if (response.statusCode == 200 || response.statusCode == 204) {
         final data=jsonDecode(response.body);
-        return data;
+        return "success";
       }
       else{
         return "failed";
@@ -85,7 +85,7 @@ class ApiServices {
           url
       );
 
-      if (response.statusCode == 204) {
+      if (response.statusCode == 200 || response.statusCode == 204) {
         return "success";
       }
       else{
