@@ -96,9 +96,20 @@ class _GetScreenState extends State<GetScreen> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
-                    Text("Welcome back,",style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold,fontSize: 14),),
+                    Row(
+                      children: [
+                        Text("Welcome back",style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold,fontSize: 14),),
+                        SizedBox(width: 2,),
+                        Icon(Icons.waving_hand_outlined,color: Colors.white,size: 25,),
+                      ],
+                    ),
                     SizedBox(height: 4,),
-                    Text("API Dashboard",style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold,fontSize: 24),),
+                    Row(
+                      children: [
+                        Text("API Dashboard",style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold,fontSize: 24),),
+                        Icon(Icons.network_check,color: Colors.white,size: 45,),
+                      ],
+                    ),
                     SizedBox(height: 2,),
                     Text("Live data from around the world",style: TextStyle(color: Colors.grey,fontSize: 12),),
                     SizedBox(height: 12,),
@@ -128,6 +139,7 @@ class _GetScreenState extends State<GetScreen> {
 
                                          
                                          Material(
+                                           color: Colors.white,
                                            child: InkWell(
                                              onTap: (){
                                                print("calling api");
@@ -189,12 +201,24 @@ class _GetScreenState extends State<GetScreen> {
                                                                    color: Colors
                                                                        .red,),
                                                                  Expanded(
-                                                                   child: Text("${state.data0!.temperature}c",style: TextStyle(
-                                                                       fontSize: 16,
-                                                                       fontWeight: FontWeight
-                                                                           .bold,
-                                                                       color: Colors
-                                                                           .black),),
+                                                                   child: Column(
+                                                                     crossAxisAlignment: CrossAxisAlignment.start,
+                                                                     children: [
+                                                                       Text("${state.data0!.temperature}",style: TextStyle(
+                                                                           fontSize: 16,
+                                                                           fontWeight: FontWeight
+                                                                               .bold,
+                                                                           color: Colors
+                                                                               .black),),
+
+                                                                       Text("degrees",style: TextStyle(
+                                                                           fontSize: 16,
+                                                                           fontWeight: FontWeight
+                                                                               .bold,
+                                                                           color: Colors.grey
+                                                                       ),),
+                                                                     ],
+                                                                   ),
                                                                  ),
 
 
@@ -506,25 +530,27 @@ class _GetScreenState extends State<GetScreen> {
 
                                                                                SizedBox(width: 16,),
 
-                                                                               Column(
-                                                                                 crossAxisAlignment: CrossAxisAlignment.start,
-                                                                                 children: [
-                                                                                   Text(
-                                                                                     "Author",
-                                                                                     style: TextStyle(
-                                                                                         fontSize: 14,
+                                                                               Expanded(
+                                                                                 child: Column(
+                                                                                   crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                   children: [
+                                                                                     Text(
+                                                                                       "Author",
+                                                                                       style: TextStyle(
+                                                                                           fontSize: 14,
+                                                                                           fontWeight: FontWeight
+                                                                                               .bold,
+                                                                                           color: Colors
+                                                                                               .green),),
+
+                                                                                     Text("${state.data3!.author}",style: TextStyle(
+                                                                                         fontSize: 16,
                                                                                          fontWeight: FontWeight
                                                                                              .bold,
                                                                                          color: Colors
-                                                                                             .green),),
-
-                                                                                   Text("${state.data3!.author}",style: TextStyle(
-                                                                                       fontSize: 16,
-                                                                                       fontWeight: FontWeight
-                                                                                           .bold,
-                                                                                       color: Colors
-                                                                                           .black),),
-                                                                                 ],
+                                                                                             .black),),
+                                                                                   ],
+                                                                                 ),
                                                                                ),
                                                                              ],
                                                                            ),

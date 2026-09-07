@@ -24,7 +24,6 @@ class _PutScreenState extends State<PutScreen> {
   final formKey4=GlobalKey<FormState>();
 
 
-  // ==================== PRODUCT UPDATE ====================
 
   TextEditingController pIdController = TextEditingController();
   TextEditingController pTController = TextEditingController();
@@ -52,7 +51,6 @@ class _PutScreenState extends State<PutScreen> {
   }
 
 
-// ==================== USER UPDATE ====================
 
   TextEditingController uIdController = TextEditingController();
   TextEditingController uLNController = TextEditingController();
@@ -81,7 +79,6 @@ class _PutScreenState extends State<PutScreen> {
 
 
 
-// ==================== DUMMYJSON POST UPDATE ====================
 
   TextEditingController dPIdController = TextEditingController();
   TextEditingController dPTController = TextEditingController();
@@ -109,7 +106,6 @@ class _PutScreenState extends State<PutScreen> {
   }
 
 
-// ==================== JSONPLACEHOLDER POST UPDATE ====================
 
   TextEditingController jPIdController = TextEditingController();
   TextEditingController jPTController = TextEditingController();
@@ -168,7 +164,13 @@ class _PutScreenState extends State<PutScreen> {
                     SizedBox(height: 4,),
                     Text("Update resources",style: TextStyle(color: Colors.grey,fontSize: 12),),
                     SizedBox(height: 4,),
-                    Icon(Icons.edit_road,color: Colors.white,size: 35,),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Icon(Icons.menu_book_rounded,color: Colors.white,size: 45,),
+                        Icon(Icons.mode_edit_outlined,color: Colors.white,size: 45,),
+                      ],
+                    ),
                     SizedBox(height: 8,),
                     Expanded(
                       child: Container(
