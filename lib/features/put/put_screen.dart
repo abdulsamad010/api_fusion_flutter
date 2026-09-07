@@ -205,14 +205,15 @@ class _PutScreenState extends State<PutScreen> {
                                       CustomTextField(type: TextInputType.text,label: "Enter Product Price", icon: Icon(Icons.price_change), iconColor: Colors.orangeAccent, con: pPController, val: pPValidator),
                                       SizedBox(height: 8,),
 
-                                      ElevatedButton(onPressed: (){
+                                      ElevatedButton(
+                                      onPressed: (){
                                         if(formKey0.currentState!.validate()) {
                                           context.read<PutBloc>().add(PutApi0Data(
                                               index: 0,
                                               id:pIdController.text,
                                               title: pPController.text,
                                               price: pTController.text));
-                                        }}, style: ElevatedButton.styleFrom(backgroundColor: Colors.blueAccent),child: Row(
+                                        }}, style: ElevatedButton.styleFrom(backgroundColor: Colors.redAccent),child: Row(
                                         mainAxisAlignment: MainAxisAlignment.center,
                                         children: [
 
@@ -270,7 +271,7 @@ class _PutScreenState extends State<PutScreen> {
                                             context.read<PutBloc>().add(PutApi1Data(
                                                 index: 1,
                                                 lastName: uLNController.text));
-                                          }}, style: ElevatedButton.styleFrom(backgroundColor: Colors.blueAccent),child: Row(
+                                          }}, style: ElevatedButton.styleFrom(backgroundColor: Colors.redAccent),child: Row(
                                           mainAxisAlignment: MainAxisAlignment.center,
                                           children: [
 
@@ -328,7 +329,7 @@ class _PutScreenState extends State<PutScreen> {
                                           if(formKey2.currentState!.validate()) {
                                             context.read<PutBloc>().add(PutApi2Data(
                                                 index: 2, title: dPTController.text,body:dPBController.text));
-                                          }}, style: ElevatedButton.styleFrom(backgroundColor: Colors.blueAccent),child: Row(
+                                          }}, style: ElevatedButton.styleFrom(backgroundColor: Colors.redAccent),child: Row(
                                           mainAxisAlignment: MainAxisAlignment.center,
                                           children: [
 
@@ -390,7 +391,7 @@ class _PutScreenState extends State<PutScreen> {
                                                 index: 3,
                                                 title: jPTController.text,
                                                 body: jPBController.text));
-                                          }}, style: ElevatedButton.styleFrom(backgroundColor: Colors.blueAccent),child: Row(
+                                          }}, style: ElevatedButton.styleFrom(backgroundColor: Colors.redAccent),child: Row(
                                           mainAxisAlignment: MainAxisAlignment.center,
                                           children: [
 

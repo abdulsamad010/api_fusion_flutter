@@ -833,22 +833,19 @@ class _GetScreenState extends State<GetScreen> {
                                                                              .min,
                                                                          children: [
 
-                                                                           Row(
-                                                                             mainAxisAlignment: MainAxisAlignment.start,
-                                                                             children: [
 
 
                                                                                Icon(Icons.person_pin,
                                                                                  color: Colors
                                                                                      .blueAccent,),
-                                                                               Expanded(
-                                                                                 child: Text("${state.data6!.name}c",style: TextStyle(
-                                                                                     fontSize: 16,
-                                                                                     fontWeight: FontWeight
-                                                                                         .bold,
-                                                                                     color: Colors
-                                                                                         .black),),
-                                                                               ),
+
+                                                                               Text("${state.data6!.name}c",style: TextStyle(
+                                                                                   fontSize: 16,
+                                                                                   fontWeight: FontWeight
+                                                                                       .bold,
+                                                                                   color: Colors
+                                                                                       .black),),
+
 
 
                                                                                Column(
@@ -871,8 +868,6 @@ class _GetScreenState extends State<GetScreen> {
                                                                                            .black),),
                                                                                  ],
                                                                                ),
-                                                                             ],
-                                                                           ),
 
                                                                            SizedBox(height: 8,),
                                                                          ],
